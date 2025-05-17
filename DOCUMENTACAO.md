@@ -32,7 +32,7 @@
 - **Back-end Spring Boot:**
     -   Projeto Java com Spring Boot, Thymeleaf, Spring MVC e Spring Data JPA.
     -   Empacotado com Maven em um .jar: senai-0.0.1-SNAPSHOT.jar
-    - Compilado com JDK versão 19, o que exigiu instalar o Java Corretto 19 na EC2.
+    - Compilado com JDK versão 24, o que exigiu instalar o Java Corretto 19 na EC2.
 
 - **Transferência do sistema:**
     - arquivo .jar transferido via scp:
@@ -40,7 +40,7 @@
     scp -i MinhaChaveSSH.pem senai-0.0.1-SNAPSHOT.jar ec2-54-234-164-95.compute-1.amazonaws.com
 
 - **Execução**
-    - Após configurar o Java 19: 
+    - Após configurar o Java 24: 
      ```bash
       java -jar senai-0.0.1-SNAPSHOT.jar
 
