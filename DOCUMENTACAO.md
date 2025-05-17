@@ -35,9 +35,9 @@
     - Compilado com JDK versão 19, o que exigiu instalar o Java Corretto 19 na EC2.
 
 - **Transferência do sistema:**
-     ```bash
-    - rquivo .jar transferido via scp:
-      scp -i MinhaChaveSSH.pem senai-0.0.1-SNAPSHOT.jar ec2-54-234-164-95.compute-1.amazonaws.com
+    - arquivo .jar transferido via scp:
+  ```bash
+    scp -i MinhaChaveSSH.pem senai-0.0.1-SNAPSHOT.jar ec2-54-234-164-95.compute-1.amazonaws.com
 
 - **Execução**
     - Após configurar o Java 19: 
