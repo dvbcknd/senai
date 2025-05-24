@@ -1,6 +1,8 @@
 package Atividade.senai.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Entity
@@ -10,7 +12,14 @@ public class Evento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank(message = "O título é obrigatório")
+    @Size(max = 300, message = "O título deve ter no máximo 300 caracteres")
+    @Column(length = 300, nullable = false)
     private String titulo;
+
+    @NotBlank(message = "A descrição é obrigatória")
+    @Size(max = 1500, message = "A descrição deve ter no máximo 1500 caracteres")
+    @Column(length = 1500, nullable = false)
     private String descricao;
 
     private LocalDate data;
